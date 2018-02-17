@@ -6,7 +6,7 @@ var loadingCount = 0;
 var message_elm = document.getElementById('message');
 var lastSelectedId = -1;
 
-window.addEventListener('load', Init);
+Init();
 
 // 猫の初期化
 function Init()

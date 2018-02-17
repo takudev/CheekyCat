@@ -95,7 +95,6 @@
 	}
 }
 @media (max-width: 600px) {
-	body { border-top: 16px solid #ffa100; }
 	.balloon{
 	  position: relative;
 	  padding: 20px;
