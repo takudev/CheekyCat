@@ -73,7 +73,7 @@ function FetchMessageData()
 
 		// メッセージの抽選
 		var random = Math.floor( Math.random() * message.length );
-		while (lastSelectedId === random)
+		while (lastSelectedId == random)
 		{
 			random = Math.floor( Math.random() * message.length );
 		}
