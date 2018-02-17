@@ -4,6 +4,7 @@ var catImage = document.createElement('img');
 var PATH = "images/cat_";
 var loadingCount = 0;
 var message_elm = document.getElementById('message');
+var lastSelectedId = -1;
 
 window.addEventListener('load', Init);
 
@@ -72,6 +73,11 @@ function FetchMessageData()
 
 		// メッセージの抽選
 		var random = Math.floor( Math.random() * message.length );
+		while (lastSelectedId === random)
+		{
+			random = Math.floor( Math.random() * message.length );
+		}
+		lastSelectedId = random;
 		message_elm.innerHTML = message[random];
 		ChangeCatImage();
 	});
