@@ -1,0 +1,125 @@
+@font-face {
+	font-family: makinas;
+	src: url(Makinas-Scrap-5.otf) format("opentype");
+}
+
+@media screen
+{
+	body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin-left: auto; margin-right: auto;}
+
+	#container
+	{
+		margin: 0 auto;
+		padding: 25px 25px 25px 25px;
+		text-align: center;
+		/*background-color: #2e4;*/
+		border-radius: 40px 40px 40px 40px;
+	}
+
+	.title
+	{
+		margin: 4px 0 4px;
+		font-size: 28px;
+    font-weight: bold;
+		padding-bottom: 25px;
+	}
+
+	.center
+	{
+		text-align: center;
+	}
+
+	#message
+	{
+		font-family: makinas;
+		font-size: 20px;
+	}
+
+/*ボタン*/
+
+	.square_btn_blue{
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;
+    color: rgba(0,0,0,0.87);
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+		font-weight: bold;
+	}
+	.square_btn_blue:active {
+	    -ms-transform: translateY(4px);
+	    -webkit-transform: translateY(4px);
+	    transform: translateY(4px);
+	    border-bottom: none;
+	}
+	.square_btn_red{
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #fd9535;
+    color: rgba(0,0,0,0.87);
+    border-bottom: solid 4px #d27d00;
+    border-radius: 3px;
+		font-weight: bold;
+	}
+	.square_btn_red:active {
+	    -ms-transform: translateY(4px);
+	    -webkit-transform: translateY(4px);
+	    transform: translateY(4px);
+	    border-bottom: none;
+	}
+
+	/*吹き出し*/
+	.balloon{
+	  position: relative;
+	  padding: 20px;
+	  background-color: #fff3ad;
+	  border-radius: 10px;
+		margin-left: 20%;
+		margin-right: 20%;
+	}
+	.balloon::before{
+		content: '';
+	  position: absolute;
+	  display: block;
+	  width: 0;
+	  height: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: -15px;
+	  margin: 0 auto;
+	  border-top: 15px solid #fff3ad;
+	  border-right: 15px solid transparent;
+	  border-left: 15px solid transparent;
+	}
+}
+@media (max-width: 600px) {
+	body { border-top: 16px solid #ffa100; }
+	.balloon{
+	  position: relative;
+	  padding: 20px;
+	  background-color: #fff3ad;
+	  border-radius: 10px;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	.balloon::before{
+		content: '';
+	  position: absolute;
+	  display: block;
+	  width: 0;
+	  height: 0;
+	  left: 0;
+	  right: 0;
+	  bottom: -15px;
+	  border-top: 15px solid #fff3ad;
+	  border-right: 15px solid transparent;
+	  border-left: 15px solid transparent;
+	}
+	#message
+	{
+		font-family: makinas;
+		font-size: 14px;
+	}
+}
