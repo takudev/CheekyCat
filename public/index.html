@@ -30,19 +30,26 @@
     <!-- initialize the SDK after all desired features are loaded -->
     <script src="/__/firebase/init.js"></script>
 
-    <link type="text/css" rel="stylesheet" href="/main.css" />
-
+    <script>
+    var rnd = Math.random().toString(36).slice(-8);
+    document.write('<link rel="stylesheet" type="text/css" href="/main.css?'+rnd+'>""');
+    </script>
   </head>
+
   <body>
+    <div id="register">
+    </div>
     <div id="container">
       <!-- タイトル -->
+
       <h1 class="title">なまいきなねこ</h1>
 
       <!-- ログインボタン -->
       <div class="button-container">
         <a href="#" style="display: none" id="auth-button" class="square_btn_blue" onclick="Auth()">ねこをGoogleに繋ぐ</a>
-        <a href="#" style="display: none" id="logout-button"  class="square_btn_red" onclick="Logout()">ねこをGoogleから離す</a>
+        <a href="#" style="display: none" id="logout-button" class="square_btn_red" onclick="Logout()">ねこをGoogleから離す</a>
       </div>
+
       <!-- 吹き出し -->
       <div class="balloon">
         <p id="message">...</p>
