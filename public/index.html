@@ -21,14 +21,14 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="#303F9F">
 
     <!-- update the version number as needed -->
-    <script defer src="/__/firebase/4.10.0/firebase-app.js"></script>
+    <script src="/__/firebase/4.10.0/firebase-app.js"></script>
     <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/4.10.0/firebase-auth.js"></script>
-    <script defer src="/__/firebase/4.10.0/firebase-database.js"></script>
-    <script defer src="/__/firebase/4.10.0/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/4.10.0/firebase-storage.js"></script>
+    <script src="/__/firebase/4.10.0/firebase-auth.js"></script>
+    <script src="/__/firebase/4.10.0/firebase-database.js"></script>
+    <script src="/__/firebase/4.10.0/firebase-messaging.js"></script>
+    <script src="/__/firebase/4.10.0/firebase-storage.js"></script>
     <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+    <script src="/__/firebase/init.js"></script>
 
     <link type="text/css" rel="stylesheet" href="/main.css" />
 
@@ -38,6 +38,11 @@
       <!-- タイトル -->
       <h1 class="title">なまいきなねこ</h1>
 
+      <!-- ログインボタン -->
+      <div class="button-container">
+        <a href="#" style="display: none" id="auth-button" class="square_btn_blue" onclick="Auth()">ねこをGoogleに繋ぐ</a>
+        <a href="#" style="display: none" id="logout-button"  class="square_btn_red" onclick="Logout()">ねこをGoogleから離す</a>
+      </div>
       <!-- 吹き出し -->
       <div class="balloon">
         <p id="message">...</p>
@@ -53,6 +58,7 @@
       </div> -->
 
       <script type="text/javascript" src="/cat.js"></script>
+      <script type="text/javascript" src="/auth.js"></script>
     </div>
   </body>
 </html>

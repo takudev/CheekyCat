@@ -37,6 +37,11 @@
 
 /*ボタン*/
 
+	.button-container
+	{
+			padding: 20px;
+	}
+
 	.square_btn_blue{
     display: inline-block;
     padding: 0.5em 1em;
