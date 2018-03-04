@@ -119,6 +119,12 @@
 		border: 1px solid #1abc9c;
 	}
 
+	#username_text
+	{
+		-webkit-margin-before: 0;
+		-webkit-margin-after: 0; 
+	}
+
 }
 @media (max-width: 600px) {
 	body

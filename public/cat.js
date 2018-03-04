@@ -13,6 +13,7 @@ Init();
 function Init()
 {
 		var place = document.getElementById('cat-placeholder');
+		catImage.src = "images/cat_message.png";
 		catImage.src = "images/cat_loading.png";
 		catImage.id = "cat";
 		//catImage.addEventListener("click",ChangeCatImage);
